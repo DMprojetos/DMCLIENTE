@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    font-family: "Poppins", sans-serif;
+    background: url("https://i.pinimg.com/564x/60/a1/a7/60a1a7c506764c9b9456cef28bc896d3.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Contêiner principal */
+.container {
+    width: 90%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #7e7e7e;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem auto;
+}
+
+/* Título principal */
+.dmbarber {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.input-container {
+    position: relative;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.input-container input {
+    width: 100%;
+    height: 50px;
+    background: #E8F0FE; /* Fundo azul claro */
+    border: 1px solid #000; /* Borda preta */
+    border-radius: 10px;
+    color: #000; /* Texto preto */
+    padding: 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-container input::placeholder {
+    color: #aaa; /* Placeholder em cinza claro */
+}
+
+/* Ícone de input */
+.input-container a {
+    position: absolute;
+    right: 0.5rem; /* Ajusta o espaço entre o ícone e a borda */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000; /* Ícone preto */
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+}
+
+/* Botão de envio */
+.submi-button {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(90, 0, 235);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submi-button:hover {
+    background-color: rgb(130, 68, 231);
+}
+
+/* Link de registro e login */
+.register-link, .login-link {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.register-link a, .login-link a {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .dmbarber {
+        font-size: 1.25rem;
+    }
+
+    .input-container input,
+    .submi-button {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .dmbarber {
+        font-size: 1rem;
+    }
+
+    .input-container input {
+        font-size: 0.8rem;
+    }
+
+    .submi-button {
+        font-size: 0.8rem;
+    }
+}
+
+
